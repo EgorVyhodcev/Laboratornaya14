@@ -12,8 +12,8 @@ def sample(string):
 
 
 if __name__ == "__main__":
-    sample_string = ("Greetings %F% %N%!"
-                     " You are doing the function closure."
-                     )
+    sample_string = (
+         "Greetings %F% %N%! You are doing the function closure."
+    )
     name, surname = input("Enter your name and surname: ").split()
     print(sample(sample_string)(name, surname))
